@@ -1,0 +1,61 @@
+name: GEOG726
+channels:
+  - conda-forge
+dependencies:
+  # Python (3.12 or newer is required by geotessera, aef-loader, xarray-spatial)
+  - python=3.12
+
+  # Jupyter
+  - jupyterlab
+  - ipykernel
+  - jupyter-server-proxy
+
+  # Core arrays and tables
+  - numpy
+  - scipy
+  - pandas
+  - bottleneck
+  - netcdf4
+  - openpyxl
+
+  # Raster and vector geospatial
+  - rasterio
+  - rioxarray
+  - xarray
+  - xarray-spatial
+  - xvec
+  - geopandas
+  - shapely
+  - pyproj
+  - exactextract
+  - odc-algo
+
+  # Data access: STAC, cloud storage, Earth Engine
+  - pystac-client
+  - planetary-computer
+  - odc-stac
+  - earthengine-api
+  - xee
+  - botocore
+
+  # Machine learning and remote-sensing models
+  - scikit-learn
+  - omnicloudmask
+  - geotessera
+
+  # Parallel computing and databases
+  - dask
+  - distributed
+  - coiled
+  - duckdb
+
+  # Visualization
+  - matplotlib
+  - lonboard
+  - python-graphviz
+
+  # Packages only on PyPI (installed by pip inside this environment)
+  - pip
+  - pip:
+      - aef-loader
+      - xrscipy
